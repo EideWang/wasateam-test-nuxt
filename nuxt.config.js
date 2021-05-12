@@ -1,4 +1,3 @@
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const pkg = require('./package')
 
 module.exports = {
@@ -25,39 +24,32 @@ module.exports = {
       }
     ]
   },
-
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
-
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
   /*
   ** Global CSS
   */
-  css: ['~/assets/style/app.styl'],
+  css: ['~/assets/css/main.scss'],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/vuetify'],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/pwa'],
-
+  modules: [],
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   /*
   ** Build configuration
   */
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module'
+  ],
   build: {
     extractCSS: true,
-    transpile: ['vuetify/lib'],
-    plugins: [new VuetifyLoaderPlugin()],
-    loaders: {
-      stylus: {
-        import: ['~assets/style/variables.styl']
-      }
-    },
 
     /*
     ** You can extend webpack config here

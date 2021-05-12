@@ -15,6 +15,7 @@ const readyPromise = nuxt
   .ready()
   .then(() => {
     isReady = true
+    return
   })
   .catch(() => {
     process.exit(1)

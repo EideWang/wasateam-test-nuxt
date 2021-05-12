@@ -1,0 +1,17 @@
+:root {
+  --text-color-primary: #799861;
+  --text-color-secondary: #4a4a4a;
+  --text-color-white: #ffffff;
+  --bg-color-primary: #f4f6e3;
+  --bg-color-secondary: #6b6b5b;
+}
+body {
+  background-color: var(--bg-color-primary);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
