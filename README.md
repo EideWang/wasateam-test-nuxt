@@ -1,6 +1,6 @@
-# nuxt-on-firebase
+# Wasateam Interview Test
 
-> Project for [dev.to tutorial on how to host a nuxt app on firebase](https://dev.to/kiritchoukc/deploy-nuxt-on-firebase-4ad8) 
+> Nuxt SSR APP deployed on Firebase (need Paid plan for using Firebase Function)
 
 ## Build Setup
 
