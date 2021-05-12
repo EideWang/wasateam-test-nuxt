@@ -2,6 +2,8 @@
 
 > Nuxt SSR APP deployed on Firebase (need Paid plan for using Firebase Function)
 
+Clone from KiritchoukC nuxt-on-firebase, remove Vuetify-related packages and modify setting.
+
 ## Build Setup
 
 ```bash
